@@ -2,7 +2,7 @@ class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
         i = 0 
         j = len(nums) - 1
-        while i < j:
+        while i <= j:
             if nums[i] == val:
                temp = nums[i]
                nums[i], nums[j] = nums[j], nums[i]
@@ -11,4 +11,4 @@ class Solution:
             else:
                i += 1
 
-        return (i+1)       
+        return j+1    
