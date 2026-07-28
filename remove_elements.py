@@ -4,9 +4,9 @@ class Solution:
         j = len(nums) - 1
         while i <= j:
             if nums[i] == val:
-               temp = nums[i]
+               
                nums[i], nums[j] = nums[j], nums[i]
-               nums[j] = temp
+              
                j -= 1
             else:
                i += 1
